@@ -1,0 +1,118 @@
+.signup{
+    height: 70%;
+    flex-basis: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--green);
+    z-index: 10;
+    box-shadow: .5rem .5rem 1.75rem black;
+    &__form{
+        height: 100%;
+        flex-basis: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        border-radius: .5rem;
+        &--title{
+            color: white;
+            font-size: 2rem;
+            font-family: sans-serif;
+            margin-top: 2.5rem;
+        }
+        &--error{
+            font-size: .6rem;
+            color: #335b72;
+            font-family: monospace;
+            font-weight: bold;
+            width: 100%;
+            flex-basis: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            &__text{
+                padding: .5rem;
+            }
+        }
+        &--subtitle{
+            font-size: 1.5rem;
+            color: #335b72;
+            font-family: monospace;
+            font-weight: bold;
+            padding-right: .5rem;
+        }
+        &--input,&--button{
+            width: 45%;
+            flex-basis: 7.5%;
+            font-family: monospace;
+            font-weight: bold;
+            border: none;
+        }
+        &--input{
+            font-size: 1.1rem;
+            color: rgb(221, 215, 215);
+            background-color: transparent;
+            position: relative;
+            width: 45%;
+            border-bottom: .125rem solid white;
+            transition: all .2s linear;
+            &:focus{
+                border-bottom-color: var(--grey);
+            }
+        }
+        &--button{
+            transition: all .2s linear;
+            font-size: 1.25rem;
+            border-radius: .25rem;
+            background-color: var(--grey);
+            color: white;
+            position: relative;
+            width: 40%;
+            &__text{
+                z-index: 1000;
+                position: relative;
+            }
+            &:hover{
+                background-color: var(--ligthest);
+                cursor: pointer;
+                &:disabled{
+                    cursor: not-allowed;
+                }
+            }
+            &:active{
+                transform: scale(.95);
+            }
+        }
+
+        &--link{
+            text-decoration: none;
+            font-family: monospace;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding-left: .25rem;
+            padding-bottom: .5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: .5rem;
+            color: var(--grey);
+        }
+
+        &--footer{
+            width: 100%;
+            height: 7.5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }&--link{
+            text-decoration: underline;
+
+
+        }
+
+    }
+}

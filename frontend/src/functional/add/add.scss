@@ -1,0 +1,69 @@
+.add{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    &__first,&__second{
+        flex-basis: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-direction: column;
+        &--input{
+            flex-basis: 12.5%;
+            width: 75%;
+            border: none;
+            border-radius: .25rem;
+            font-family: monospace;
+            font-size: 1.1rem;
+            color: white;
+            font-weight: bold;
+            padding-left: .5rem;
+            margin-left: 1.5rem;
+            cursor: pointer;
+            background-color: rgb(62, 73, 75);
+        }
+    }
+
+    &__second{
+        &--textarea{
+            flex-basis: 65%;
+            width: 85%;
+            border: none;
+            border-radius: .25rem;
+            font-family: monospace;
+            font-size: 1.1rem;
+            color: white;
+            font-weight: bold;
+            padding-left: 1rem;
+            margin-top: .5rem;
+            padding-top: .5rem;
+            cursor: pointer;
+            background-color: rgb(62, 73, 75);
+        }
+        &--button{
+            flex-basis: 15%;
+            width: 85%;
+            border: none;
+            border-radius: .25rem;
+            font-family: monospace;
+            font-size: 1.1rem;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all .2s linear;
+            position: relative;
+            background-color: var(--green);
+            &__text{
+                z-index: 1;
+            }
+            &:hover{
+                cursor: pointer;
+                background-color: #278652;
+            }
+        }
+    }
+    
+}

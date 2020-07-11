@@ -1,0 +1,71 @@
+@keyframes move{
+    0%{
+        transform: translateY(-100rem);
+    }
+    100%{
+        transform: translateY(0rem);
+    }
+}
+
+.popup{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba($color: black, $alpha: 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__inner{
+        flex-basis: 45%;
+        height: 45%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        animation: move .5s linear;
+        background-color: var(--light);
+        z-index: 10;
+        &--header{
+            width: 100%;
+            height: 11%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--grey);
+            
+            &__error{
+                font-family: sans-serif;
+                font-weight: bold;
+                padding-right: .75rem;
+                color: rgb(133, 64, 64);
+                font-size: 1rem;
+                padding-left: 2rem;
+                height: 100%;
+                width: 60%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            &__exit{
+                font-family: sans-serif;
+                font-weight: bold;
+                padding-right: .75rem;
+                color: white;
+                transition: all .2s linear;
+                font-size: 2rem;
+                &:hover{
+                    color: var(--green);
+                    cursor: pointer;
+                }
+            }
+        }
+        &--content{
+            width: 100%;
+            height: 90%;
+            display: flex;
+        }   
+    }
+}
