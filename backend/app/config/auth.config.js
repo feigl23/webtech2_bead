@@ -1,3 +1,3 @@
 module.exports={
-    secret:"access-is-my-favourite-db"
+    secret:"mondodb-is-my-favourite-db"
 };
